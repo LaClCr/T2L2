@@ -20,3 +20,5 @@ grep -r línia
 ====7====
 grep -r línia.*blanc
 
+====8====
+grep -r Línia.*Totes
