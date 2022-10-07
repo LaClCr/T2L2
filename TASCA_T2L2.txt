@@ -16,3 +16,7 @@ mkdir prova
 cp demo.txt ./prova
 cp demo.txt ./demo2.txt
 grep -r línia
+
+====7====
+grep -r línia.*blanc
+
