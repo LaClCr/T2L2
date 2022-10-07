@@ -4,3 +4,6 @@ nano demo.txt (Afegim el text)
 mkdir T2L2
 mv demo.txt ./T2L2
 cd ./T2L2
+
+====4====
+cat demo.txt | grep esta
