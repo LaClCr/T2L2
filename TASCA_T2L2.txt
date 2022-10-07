@@ -10,3 +10,9 @@ cat demo.txt | grep esta
 
 ====5====
 cat demo.txt | grep -i línia
+
+====6====
+mkdir prova
+cp demo.txt ./prova
+cp demo.txt ./demo2.txt
+grep -r línia
