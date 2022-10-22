@@ -1,4 +1,8 @@
 ====1 al 3====
+1.	Fes una carpeta anomenada T2L2 dins del teu home
+2.	Entra en T2L2
+3.	Fes un fitxer demo.txt que continga:
+
 touch demo.txt  
 nano demo.txt (Afegim el text)  
 mkdir T2L2
@@ -6,25 +10,42 @@ mv demo.txt ./T2L2
 cd ./T2L2
 
 ====4====
+4.	Mostra les línies que continguen la cadena “esta” amb el comando grep.
+
 cat demo.txt | grep esta
 
 ====5====
+5.	Mostra les línies que continguen la cadena “línia”, independentment si és amb minúscula o majúscula.
+
 cat demo.txt | grep -i línia
 
 ====6====
+6.	Fes un directori “prova” i copia el fitxer “demo.txt” dins del mateix. Copia també el fitxer “demo.txt” 
+al directori actual amb el nom “demo2.txt”. Mostra les línies que apareixen en tots el fitxers que hi haja al directori i 
+subdirectoris actuals amb la paraula “línia”.
+
+
 mkdir prova
 cp demo.txt ./prova
 cp demo.txt ./demo2.txt
 grep -r línia
 
 ====7====
+7.	Mostra les línies que continguen la cadena “línia” i després “blanc”.
+
 grep -r línia.*blanc
 
 ====8====
+8.	Mostra les línies que continguen la cadena “Línia” i després “Totes”.
+
 grep -r Línia.*Totes
 
 ====9====
+9.	Compta les línies que continguen la cadena “línia”.
+
 grep -r línia | wc -l
 
 ====10====
+10.	Mostra la posició del fitxer que continguen totes les aparicions de “línia”.
+
 cat -n demo.txt | grep línia 
